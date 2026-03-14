@@ -4,7 +4,7 @@ const api = axios.create({
   baseURL: "https://task-manager-9dod.onrender.com/api"
 });
 
-// Automatically attach token to every request
+// attach token to every request
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
 
