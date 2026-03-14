@@ -13,14 +13,9 @@ function Login() {
     setError('');
 
     try {
-      const res = await api.post('/auth/login', { email, password });
+      await api.post('/auth/login', { email, password });
 
-      // Save token in localStorage
-      if (res.data.token) {
-        localStorage.setItem('token', res.data.token);
-      }
-
-      // Redirect to dashboard
+      // Cookie will be stored automatically by the browser
       navigate('/dashboard');
 
     } catch (err) {
