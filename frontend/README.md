@@ -10,7 +10,7 @@ The application allows users to securely register, log in, and manage their pers
 # Live Application
 
 Frontend
-https://task-manager-qapb.vercel.app
+https://task-manager-1-jlo2.onrender.com
 
 Backend API
 https://task-manager-9dod.onrender.com
