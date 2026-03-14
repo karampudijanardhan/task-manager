@@ -11,11 +11,12 @@ const app = express();
 
 // Middleware
 app.use(express.json());
+const cors = require("cors");
 
 app.use(cors({
   origin: [
     "http://localhost:5117",
-    "https://task-manager-qapb.vercel.app"
+    "https://task-manager-yx7n.vercel.app"
   ],
   credentials: true
 }));
