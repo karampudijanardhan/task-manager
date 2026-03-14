@@ -11,11 +11,12 @@ const app = express();
 
 app.use(express.json());
 
+const cors = require("cors");
+
 app.use(cors({
-  origin: "https://task-manager-89o5.vercel.app/",
+  origin: "*",
   credentials: true
 }));
-
 app.use(cookieParser());
 
 mongoose.connect(process.env.MONGO_URI)
